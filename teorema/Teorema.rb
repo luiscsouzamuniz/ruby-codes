@@ -25,12 +25,16 @@ class Teorema
     end
     
     def tipo_calc
-
-        if @a == 0
-            puts "O valor da hipotenusa é: #{hipotenusa}"
-        elsif 
-            puts "O valor do cateto é: #{cateto}"
+        if (@a == 0 && (@b == 0 || @c == 0)) || (@b == 0 && @c == 0)
+            puts "Insira os valores para cálculo!"
+        else
+            if @a == 0
+                puts "O valor da hipotenusa é: #{hipotenusa}"
+            elsif 
+                puts "O valor do cateto é: #{cateto}"
+            end
         end
+        
     end
 
     def hipotenusa

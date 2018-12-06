@@ -39,8 +39,8 @@ class Init
 			repeat = gets.chomp.to_s
 			# LINUX => clear, WINDOWS => cls
 			if repeat == 's' or repeat == 'S'
-				# PARANDO A CALCULADORA
-				system 'clear'
+				puts 'Voltando ao menu...'
+				sleep(0.5)
 				@i +=1
 			else
 				# REPETINDO A CALC

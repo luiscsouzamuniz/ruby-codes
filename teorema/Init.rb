@@ -35,6 +35,8 @@ class Init
 			repeat = gets.chomp.to_s
 
 			if repeat == 'S' || repeat == 's'
+				puts 'Voltando ao menu...'
+				sleep(0.5)
 				@i += 1
 			else
 				system 'clear'
